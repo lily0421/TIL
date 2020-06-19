@@ -37,16 +37,16 @@ def prime_number_list(length):
         result = []
 
         i = 1 #모든 숫자
-        cnt = 1 #result의 개수
+        cnt = 0 #result의 개수
         while True:
             if is_prime(i) == True:
                 
                 result.append(i)
-                cnt = cnt+1
-                i = i+1
+                cnt = cnt + 1
+                i = i + 1
             if cnt == length:
                 break
-            i = i+1
+            i = i + 1
         return result
 
 length = int(input('Length? '))
