@@ -1,0 +1,6 @@
+CSS 기초
+- style 속성을 이용해서 CSS 사용하기
+<h2 style=“background-color:coral;color:powderblue”> JS </h2>
+style => CSS가 온다고 약속되어 있음
+background-color =>글자의 백그라운드 컬러 지정 ) 이들은 검색을 통해서 할 수 있음
+=> 특정 태그를 CSS 언어로 디자인 하고 싶으면, style속성 사용 + CSS문법 사용
