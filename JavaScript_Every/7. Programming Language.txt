@@ -1,0 +1,35 @@
+- 프로그램, 프로그래밍, 프로그래머
+JS => 프로그램 언어
+HTML => 프로그램 언어 아님
+
+- 비교 연산자와 Boolean 데이터 타입
+<h1>Comparison operators & Boolean</h1>
+<h2>===</h2>
+
+<h3>1===1</h3>
+<script>
+  document.write(1===1);   => True
+</script>
+
+<h3>1===2</h3>
+<script>
+  document.write(1===2);   => False
+</script>
+
+<h3>1&lt;2</h3> => &lt;은 <의 의미 가짐
+<script>
+  document.write(1<2); => T
+</script>
+
+<h3>1&lt;1</h3>
+<script>
+  document.write(1<1); => F
+</script>
+
+document.write() => 괄호 안에 있는 것을 출력
+=== ) 동등비교
+T, F => Boolean
+
+Number =>숫자
+String => 문자
+Boolean => 2가지만 있는 데이터 타입
