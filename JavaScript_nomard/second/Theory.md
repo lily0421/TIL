@@ -42,11 +42,12 @@ window.addEventListener("resize");
 event listener를 window에 추가하려고 하면, 우리가 이벤트에서 다룰 함수를 적어야 함
 <pre><code>
 window.addEventListener("resize", handleResize);
-</code></pre>
+</code>
+</pre>
 
 handleResize 와 handleResize() 의 차이\
     =>handleResize는 함수를 즉시 호출하지 않음\
-    =>handleResize()는 함수를 즉시 호출'
+    =>handleResize()는 함수를 즉시 호출
 
 function handleResize(event) => 어디서 온 event인가!
 JS에서 온 event. JS는 이벤트를 다룰 함수를 만들 때 마다, JS는 자동적으로 함수를 객체에 붙인다.
@@ -56,4 +57,5 @@ window.addEventListener("resize", handleResize(event));로 event발생할 때 �
 한번 클릭시, 색을 파란색으로 변경
 <pre><code>
 function handleClick()
-</code></pre>
+</code>
+</pre>
