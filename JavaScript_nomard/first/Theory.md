@@ -52,11 +52,11 @@ array => 0부터 셈 시작.
 ## object
 각 value에 이름 줄 수 있음
 name은 변수므로 "name"으로 적지 않음
-gender만 출력하고 싶어요
-    => console.log(hanInfo.gender);
+gender만 출력하고 싶어요\
+=> console.log(hanInfo.gender);
 
 const hanInfo 라고 했지만 hanInfo 자체는 바꿀 수 없고, 내용은 바꿀 수 있다.
-ex) hanInfo = true
+ex) hanInfo = true\
 object를 array에 넣을 수 있다.
 
 ##### DB에서 가져온 리스트 데이터 = Array
