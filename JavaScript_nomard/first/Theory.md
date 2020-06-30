@@ -24,10 +24,10 @@ console.log(b, a);
 </pre>
 let, const, var
 ---------------
-const => 상수 = 안정적으로 변하지 않음
+const => 상수 = 안정적으로 변하지 않음\
 따라서 a = 4는 에러
 
-let은 변수가 바뀌는 것을 허락 
+let은 변수가 바뀌는 것을 허락 \
 var는 variable => let과 같은 역할이지만 많이 쓰지 않음.
 
 Data Types
@@ -35,26 +35,25 @@ Data Types
 // => 한줄 주석
 /**/ => 여러줄 주석
 
-아직까지는 const를 기본적으로 사용하자!
-
-"565564" => 텍스트
-
+아직까지는 const를 기본적으로 사용하자!\
+"565564" => 텍스트\
 Boolean => True=1, False=0
 
 Organizing Data
 ---------------
 ## array
-
-camel case => 변수명을 소문자로 시작, 스페이스 대신 다음 문자의 첫 글자를 대문자 
-
+camel case => 변수명을 소문자로 시작, 스페이스 대신 다음 문자의 첫 글자를 대문자 \
 array => 0부터 셈 시작.
 
 ## object
-각 value에 이름 줄 수 있음
-name은 변수므로 "name"으로 적지 않음
-gender만 출력하고 싶어요\
-=> console.log(hanInfo.gender);
-
+각 value에 이름 줄 수 있음\
+name은 변수므로 "name"으로 적지 않음\
+gender만 출력하고 싶어요
+<pre>
+<code>
+console.log(hanInfo.gender);
+</code>
+</pre>
 const hanInfo 라고 했지만 hanInfo 자체는 바꿀 수 없고, 내용은 바꿀 수 있다.
 ex) hanInfo = true\
 object를 array에 넣을 수 있다.
