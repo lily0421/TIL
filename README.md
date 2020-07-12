@@ -2,7 +2,7 @@
     TIL list
 </h1>
 
-## [Study_python](https://github.com/kimhan0421/TIL/tree/master/Study_python)
+## [Python](https://github.com/kimhan0421/TIL/tree/master/Study_python)
 ## JavaScript
 + [Every](https://github.com/kimhan0421/TIL/tree/master/JavaScript/Every_c)
 + [nomard](https://github.com/kimhan0421/TIL/tree/master/JavaScript/nomard)
