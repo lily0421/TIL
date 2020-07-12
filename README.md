@@ -2,7 +2,7 @@
     TIL list
 </h1>
 
-- [Data_Structure](https://github.com/kimhan0421/TIL/tree/master/Data_Structure)
-- [Study_python](https://github.com/kimhan0421/TIL/tree/master/Study_python)
-- [JavaScript_Every](https://github.com/kimhan0421/TIL/tree/master/JavaScript_Every)
-- [JavaScript_nomard](https://github.com/kimhan0421/TIL/tree/master/JavaScript_nomard)
+## [Study_python](https://github.com/kimhan0421/TIL/tree/master/Study_python)
+## JavaScript
++ [Every](https://github.com/kimhan0421/TIL/tree/master/JavaScript/Every_c)
++ [nomard](https://github.com/kimhan0421/TIL/tree/master/JavaScript/nomard)
