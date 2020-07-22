@@ -6,5 +6,5 @@
 ## JavaScript
 + [Every](https://github.com/kimhan0421/TIL/tree/master/JavaScript/Every_c)
 + [nomard](https://github.com/kimhan0421/TIL/tree/master/JavaScript/nomard)
-## [Java]
+
 ## [React]
