@@ -7,7 +7,7 @@
 
 다음 둘은 같다
 ```javascript
-const sayHello = (name) => "hellㅐ" + name;
+const sayHello = (name) => "hellO" + name;
 ```
 ```javascript
 function sayHello(name){
