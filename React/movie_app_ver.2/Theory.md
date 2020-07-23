@@ -20,7 +20,7 @@ function sayHello(name){
   <strong>1.2 Template Literals</strong><br>
 </p>
 
-띄어쓰기 + 를 기억하기 싫어요.
+띄어쓰기와 + 를 기억하기 싫어요.
 ```javascript
 const sayHello = (name) => `Hello ${name}`;
 ```
@@ -51,9 +51,10 @@ const lastName = human.lastName;
 ```
 
 ```javascript
+효율적인 코드
 const { name, lastname} = human;
 ```
-+ {} => object안에 있는 Property들을 가져옴
++ {  } => object안에 있는 Property들을 가져옴
 + 알고 싶은 object는 human
 
 ```javascript
@@ -69,5 +70,9 @@ favFood의 dinner, breakfast, lunch을 얻고 싶어요
 const { favFood: {dinner, breakfast, lunch} } = human;
 console.log(dinner, breakfast, lunch);
 ```
-+ : {} 로 OBJ의 안으로 들어가는 것
++ : {  } 로 OBJ의 안으로 들어가는 것
+
+<p align="center">
+  <strong>1.4 Spread Operato</strong><br>
+</p>
 
