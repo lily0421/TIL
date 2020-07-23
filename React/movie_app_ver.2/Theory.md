@@ -19,3 +19,9 @@ function sayHello(name){
 <p align="center">
   <strong>1.2 Template Literals</strong><br>
 </p>
+
+띄어쓰기 + 를 기억하기 싫어요.
+```javascript
+const sayHello = (name) => `Hello ${name}`;
+```
+
