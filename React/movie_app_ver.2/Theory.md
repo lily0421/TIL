@@ -76,3 +76,46 @@ console.log(dinner, breakfast, lunch);
   <strong>1.4 Spread Operato</strong><br>
 </p>
 
+```javascript
+const days = ["Mon", "Tue"];
+const other = ["Thu", "Fri"];
+const allDays = days + other;
+console.log(allDays); 
+```
++ console.log => string으로 바꿔줌
+
+```javascript
+let allDays = [days + other];
+console.log(allDays);
+```
++ 하나의 item을 가진 배열을 가지고 싶어요
+
+```javascript
+const allDays = [days, other];
+```
++ [Array[2], Array[2]] 출력됨
+
+```javascript
+Spread Operator 등장
+const allDays = [...days, other];
+```
++ ["Mon", "Tue", Array[2]] 출력됨
++ [...days, ...other]로 두 배열을 한 배열에 있도록 할 수 있음
+
+```javascript
+OBJ에서도 작동!
+const ob ={
+  first: "hi",
+  second: "hello"
+};
+const ab = {
+  thrid: "bye bye"
+};
+const two = {...ob, ...ab};
+```
++ Object {first: "hi", second: "hello", thrid: "bye bye"} 출력됨
+
+```javascript
+function 에서도 작동!
+const fun = {something, args} => console.log(...args)
+```
