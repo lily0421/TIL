@@ -26,3 +26,16 @@ i.select_one('a > strong').text.strip()
 + a 태그 안에 strong에는 영화 제목이 있음
 + .text로 글자만
 + .strip()로 공백 제거
+
+<p align="center">
+  <strong>2. Telegram bot</strong><br>
+</p>
+
+간단하게 구축 가능 + 선톡 기능 + 여러 사용자 이용 가능
+> pip install python-telegram-bot
+
+<p align="center">
+  <strong>3. 스케쥴러 만들기</strong><br>
+</p>
+
+> pip install apscheduler
