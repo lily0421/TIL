@@ -152,3 +152,46 @@ class Baby extends Human {
 + 새로운 함수 cry, sayName
 + sayName의 this는 class Baby extends Human를 의미
 
+<p align="center">
+  <strong>1.6 Array map</strong><br>
+</p>
+
+vscode 이모지 단축키
++ (윈도우 로고키) + (마침표키)
+
+```javascript
+const days = ["😀Mon", "😁Tue", "😂Wed", "🤣Thu", "😎Fri"];
+```
+```javascript
+const smilingDays = days.map(potato => console.log(potato));
+```
++ days에 있는 모든 요일에 function을 실행하겠다
++ 그 function에서 나온 값을 저장해서 새로운 배열로 만들겠다
++ potato가 배열의 각각의 값을 가지게 됨. (월, 화, 수, 목, 금)
+
++ 즉, map은 함수의 return값을 리턴함
+
+```javascript
+console.log(smilingDays);  
+```
++ 이 경우, 리턴하는 값이 없으므로, undefinded로 결과 나옴
+
+```javascript
+const smilingDays = days.map(potato => `🎈 ${potato}`);
+console.log(smilingDays);  
+```
++ 이 경우, 🎈를 포함해 값 출력.
++ `🎈 ${potato}` 이 부분이 리턴하는 값
++  => (arrow Function) 은  return으 함축적으로 가짐 
+
+```javascript
+const smilingDays = days.map(day, index) => `#${index} ${day}`;
+// const addNumber = (day, index) => `#${index} ${day}`;
+// const smilingDays = days.map(addNumber)
+console.log(smilingDays);    
+```
++ 출력 ) ["#0 Mon", "#1 Tue" ...]
++ map은 여러개 argument 전달 가능
++ day = day라는 각각의 값
++ index = 현재 있는 숫자
+
