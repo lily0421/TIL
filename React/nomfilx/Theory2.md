@@ -27,3 +27,31 @@ create-react-app이용 (cmd이용)
 
 nomfil폴더에 prop-types설치
 + yarn add prop-types
+
+시작
++ yarn start
+
+<p align="center">
+  <strong>2.1 React Router Part One </strong><br>
+</p>
+
+README.md 작성
++ 계획 작성
+- [ ] Home 영화가 보여짐
+- [ ] TV Shows
+- [ ] Search TV쇼나 영화를 찾을 수 있음
+- [ ] Detail 클릭하면 디테일 나옴
+
+Components 폴더 생성 - App.js넣기
++ index.js 
+> import App from 'Components/App';
++ 이때, env에서 기본적으로 src파일을 보게 만들어 줌
++ 즉, src폴더 - (env때문) - Components폴더 - App찾음
+
+Route 폴더 생성 - 스크린 보여줌
++ Home.js, Tv.js, Search.js, Detail.js
++ export default () => "~";
+
+React App에게 Home에서 시작하는 것 알려주기
+> yarn add react-router-dom
+
