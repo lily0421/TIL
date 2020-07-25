@@ -195,3 +195,38 @@ console.log(smilingDays);
 + day = day라는 각각의 값
 + index = 현재 있는 숫자
 
+<p align="center">
+  <strong>1.7 Array filter</strong><br>
+</p>
+
+```javascript
+const number = [2, 45, 56, 456, 86, 14, 745, 423, 5, 7, 8, 9, 53];  
+```
+
+```javascript
+const biggerThan15 = number.filter(number => number > 15)
+// const test = (number) => number <15
+// const biggerThan15 = number.filter(test);
+```
++  15 보다 큰 숫자를 필터
++ filter 는 map과 비슷.
+> 배열의 각각 아이템에 function을 실행
+> return값이 true면 해당 아이템을 넣음
+
++ map vs filter \
+map = 배열의 모든 Argu에 function을 실행 후, 그 결과 값들로 이루어진 배열을 만듦 \
+filter = 배열의 모든 요소에 function을 실행해서 true를 return하는 요소로만 이루어진 배열 만듦
+
+
+```javascript
+응용 예시
+let posts = ["HI", "Hello", "Bye"];
+posts = posts.filter(post => post !== "Bye");
+console.log (posts)
+```
++ posts는 filter로 정리된 bye값을 갖지 않음
++ post는 각각의 아이템들.
+
++ let vs const
+> let은 변수에 재할당이 가능하지만,
+> const는 변수 재선언, 재할당 모두 불가능
