@@ -119,3 +119,36 @@ const two = {...ob, ...ab};
 function 에서도 작동!
 const fun = {something, args} => console.log(...args)
 ```
+<p align="center">
+  <strong>1.5 Classes</strong><br>
+</p>
+
+```javascript
+class Human{
+  constructor(name, lastName){
+    this.name = name;
+    this.lastName = lastName
+  }
+}
+```
++ this => class를 참조 하겠다
+
+```javascript
+const Hansol = new Human("Han", "sol");
+```
+
+```javascript
+class Baby extends Human {
+  cry(){
+    console.log("I'm crying")
+  }
+  sayName(){
+    console.log('My name is ${this.name}');
+  }
+}
+```
++ Human에 속하는  Baby.
++ Human의 모든 것을 가짐
++ 새로운 함수 cry, sayName
++ sayName의 this는 class Baby extends Human를 의미
+
