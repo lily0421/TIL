@@ -210,7 +210,7 @@ const biggerThan15 = number.filter(number => number > 15)
 ```
 +  15 보다 큰 숫자를 필터
 + filter 는 map과 비슷.
-> 배열의 각각 아이템에 function을 실행
+> 배열의 각각 아이템에 function을 실행 \
 > return값이 true면 해당 아이템을 넣음
 
 + map vs filter \
@@ -228,5 +228,38 @@ console.log (posts)
 + post는 각각의 아이템들.
 
 + let vs const
-> let은 변수에 재할당이 가능하지만,
+> let은 변수에 재할당이 가능하지만, \
 > const는 변수 재선언, 재할당 모두 불가능
+
+<p align="center">
+  <strong>1.8 forEach includes push</strong><br>
+</p>
+
+```javascript
+let posts = ["HI", "Hello", "Bye"];
+posts.forEach(post => console.log(post));
+push.push("new");
+```
++ map => 새로운 배열을 return
++ flilter => 조건에 맞는 새로운 배열을 return
++ forEach => 각각의 아이템에 대해 어떤 시행만 하는 것 의미
+> user에 저장, 로컬 스토리지에 저장, API로 보내거나, 경고 보내는 등을 할 수 있음
++ push => 새로운 아이템을 배열에 추가하는 역할
+
+```javascript
+let greetings = ["Hi", "Hello", "Howdy", "Suup"];
+if(greetings.includes("Hello")){
+  greetings.push("Hello");
+}
+```
++ includes => 해당하는 것이 있는지 확인 후 없으면 push
++ 이때, push되면 추가 된 것 것이 맨 뒤로 감
+
+```javascript
+let greetings = ["Hi", "Hello", "Howdy", "Suup"];
+console.log(greetings, greetings.reverse());
+```
++ 앞뒤 바꿔줌
+
++ 더 많은 문서들 \
+https://developer.mozilla.org/ko/
