@@ -55,3 +55,43 @@ Route 폴더 생성 - 스크린 보여줌
 React App에게 Home에서 시작하는 것 알려주기
 > yarn add react-router-dom
 
+프로젝트 시작 - Router.js
+> import React, { HashRouter } from "react"; \
+> import {HashRouter as Router} from "react-router-dom"; ) Router 중에 HashRouter사용 
+
+```javascript
+export default () => {
+    <Router>
+        
+    </Router>
+}
+```
++ Router생성
+
+```javascript
+export default () => {
+    <Router>
+        <Route path="/" exact component={Home} /> 
+    </Router>
+}
+```
++ path는 어느 URL에서 해당 Route를 render할지 알려줌
++ Component ) 누군가 이 Route에 왔을 때 어떤 컴포넌트가 보여질 건지에 대함
+> import Home from "Routes/Home"; 필요
+
+
+App.js
+```javascript
+class App extends Component {
+  render(){
+    return <><Router /></>;
+  }  
+}
+```
++ React에서는 한개만 사용가능 => 그래서! Fragments 사용
+> Fragments => 원하는 만큼 컴포넌트를 return할 수 있게 해줌 \
+> import Router from "Components/Router"; 필요
+
+Router.js
++ path 추가
+
