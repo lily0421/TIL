@@ -95,3 +95,52 @@ class App extends Component {
 Router.js
 + path 추가
 
+<p align="center">
+  <strong>2.2 React Router part Two </strong><br>
+</p>
+
+#
++ HashRouter 
+> => URL에 #이 보여짐 ) 웹에 있다는 느낌을 줌 \
+> 페이지 내 Hash사용
++ Brower Router
+>  => URL에 #없음 ) 앱에 있다는 느낌을 줌 \
+> HTML history API사용
+
+React Router - Composition
++ Composition는 두개 이상의 Route를 랜더링하는 방식
+><Route path="/tv"component={TV} /> /
+><Route path="/tv/pop" render={() => <h1>Pop</h1>} />
++ /tv/pop로 갔을 때, tv + pop이 보여짐
+
+Components - Header.js
++ header - 리스트 ) ul- 3개 tag ) il - 링크 ) a href
+
+App.js
+```javascript
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <Router />
+      </>
+    );
+  }
+}
+```
++ return ();조심
+
+Router.js
++ Redirect
+> 이상한 주소를 가도 Home으로! \
+> 그런데 두개를 render해주는 오류 발생 
++ Switch를 사용
+> 한 번에 오직 하나의 Route만 Render하게 해줌
+
+```javascript
+<Route path="/tv" exact component={TV} />
+<Route path="/tv/pop" render={() => <h1>Pop</h1>} />
+```
++ exact 넣어야 함
++ 넣지 않으면 /tv로 시작하는 것이 들어오면 일치하는 것으로 인식
