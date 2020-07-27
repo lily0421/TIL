@@ -18,3 +18,24 @@ for i in bot.getUpdates():
     print(i.message)
 ```
 + 텔레그램 id값 얻기
+
+<p align="center">
+  <strong>3. scheduler create</strong><br>
+</p>
+
++ APScheduler이용
+> pip install apscheduler 
+```python
+from apscheduler.schedulers.blocking import BlockingScheduler
+```
+```python
+sched = BlockingScheduler()
+sched.add_job(job_function, 'interval', seconds=30)
+sched.start()
+```
++ seconds=30 ) 30초마다 메시지 보내기
++ start()로 시작
+
+if 문에 넣어
++ imax가 열렸을 때만 메시지 보내기
+
