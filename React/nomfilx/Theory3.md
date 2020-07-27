@@ -49,4 +49,47 @@ Elements 에서 확인
 + 즉, className 을 기억해야 함
 
 
+<p align="center">
+  <strong>3.2 CSS in React part Three</strong><br>
+</p>
 
+Components - App.js, Header.js, Router.js
+
+style 컴포넌트 생성
+> yarn add styled-components
+Header.js
+> import styled from 'styled-components'
+
+JS와 CSS가 같이 있어요
+```javascript
+const List = styled.ul`
+    display:flex;
+    &:hover{
+        background-color: blue;
+    }
+`;
+<ul></ul> => <List></List>
+```
+링크를 다른 방식으로 하고 싶어요.
++ React Router에서 주어진 Link사용. 
+> import {Link} from "react-router-dom"
++ Link는 해당 페이지가 어플리케이션에 있으면 그 곳으로 브라우져한 방식으로 안감. \ JS방식으로 가게 해줌
+
++ Link에 스타일 추가
+> const SLink = styled(Link)``;
++ 이때 Link이름 중복 안됨
+```javascript
+<SLink to="/">Movies</SLink>
+```
+에러 발생! - Router 밖에서 사용불가
++ router.js ) import Header from "Components/Header";
+```javascript  
+<Router>
+  <> 
+    <Header />
+    <Switch>
+    </Switch>
+  </>
+</Router>
+```
++ Router는 하나의 Child만 render하기 때문
