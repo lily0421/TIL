@@ -1,9 +1,7 @@
 <h1 align="center">
 Movie crawling
 </h1> 
-<p align="center">
-  <strong>Python</strong><br>
-</p>
+
 <p align="center">
   <strong>1. web_crawling</strong><br>
 </p>
