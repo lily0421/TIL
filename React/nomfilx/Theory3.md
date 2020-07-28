@@ -93,3 +93,32 @@ const List = styled.ul`
 </Router>
 ```
 + Router는 하나의 Child만 render하기 때문
+
+<p align="center">
+  <strong>3.3 GlobalStyles and Header</strong><br>
+</p>
+
+Global 스타일 선호
++ 해당 사이트의 폰트 설정, SC설치 등 하기 위함
+> yarn add styled-reset
++ Components - GlobalStyles.js추가
+
+GlobalStyles.js
+```javascript
+const globalStyles = createGlobalStyle`
+    ${reset};
+    a{ 모든 링크        
+    }
+    *{ 모든 element        
+    }
+    body{        
+    }
+`;
+```
+
+App.js
+> import GlobalStyles from "Components/GlobalStyles"; \ 
+> <Router />  <GlobalStyles />
+
++ body 태그가 적용한 CSS들을 가지고 있음
+
