@@ -5,7 +5,7 @@
   <strong>4.0 Introduction to The Movie DB API</strong><br>
 </p>
 
-Q : 데이터가 어디에서 왔고, 어디에서 오는지 궁금해요
+Q : 데이터가 어디에서 왔고, 어디에서 오는지 궁금해요 \
 A : the Movie DB API에서 와요
 
 <p align="center">
@@ -24,8 +24,19 @@ Api.js => 작업하기 위함
 + Axios 장점 ) 인스턴스를 configure(설정)해 줄수 있다는 것
 + axios.create ) 인스턴스 위한 설정
 + 
-  첫번째 파라미터 = api_key
+  첫번째 파라미터 = api_key \
   두번째 파라미터 = language
 + api.get("tv/popular"); => 상대경로
 + api.get("/tv/popular"); => 절대경로
 
+<p align="center">
+  <strong>4.2 API Verbs part One</strong><br>
+</p>
+
+Api.js - 2개 오브젝트
++ 오브젝트
++ 모든 request + function넣을 것
+
+> nowPlaying: () => api.get()
++ function이고 암시적 리턴 사용
++ "movei/now_playing" ) 사이트에서 찾아 가져오기
