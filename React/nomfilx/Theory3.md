@@ -115,10 +115,28 @@ const globalStyles = createGlobalStyle`
     }
 `;
 ```
-
 App.js
 > import GlobalStyles from "Components/GlobalStyles"; \ 
 > <Router />  <GlobalStyles />
 
 + body 태그가 적용한 CSS들을 가지고 있음
 
+<p align="center">
+  <strong>3.4 Location Aware Header </strong><br>
+</p>
+
+Header가 어떤 Route에 있는지 알게 하는 법에 알아보기
+
+Header.js - const Item
++ border-bottom 이용
++ 기본적 값 = 투명
+> border-bottom: 5px solid transparent;
++ Item에 prop값 주기) <Item current={true}> 
++ current값이 T or F인지 판단해서 border-bottom사용
++ 현재 어디 있는지 알고 싶어요 ) import withRouter
+```javascript
+ border-bottom: 5px solid 
+    ${props => (props.current ? "#3498db": "transparent")};
+```
++ current는 boolean타입.
++ True 려면 {pathname === "/~"}
