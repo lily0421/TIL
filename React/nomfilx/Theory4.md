@@ -40,3 +40,25 @@ Api.js - 2개 오브젝트
 > nowPlaying: () => api.get()
 + function이고 암시적 리턴 사용
 + "movei/now_playing" ) 사이트에서 찾아 가져오기
+
+<p align="center">
+  <strong>4.3 API Verbs part Two</strong><br>
+</p>
+
+
+movieDetail: id => api.get(`movie/${id}`)
++ id 가 필요
++ {movie_id}대신 ${id}사용함
+
+append_to_response
++ 예고편, 관련 비디오 리스트 가져오고 싶어요
+
+search mopvie
++ 파라미터를 쓰는지 확인
++ 빈칸(space)넣으면 작동 안됨.
++ String으로 되야 하기 때문.
+> @을 입력하면 URL에서 인코딩 필요함.
+
++ JS에서 인코딩 URl ) 
+> encodeURLComponenet(term)
++ term 값을 함수에 넘겨 값을 인코딩하고 그 물자열로 검색 함
