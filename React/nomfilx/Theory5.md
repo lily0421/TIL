@@ -16,7 +16,7 @@ API verbs, functions들을 화면에 넣고 싶어요
 + 이번에는 다른 방법 사용
 리엑트 컴포넌트 코딩 패턴 (컨테이너 프리젠터 패턴)
 > 컨테이너는 data가지고, state가지고, api불러옴. \
-> 모든 로직 처리 후 프리젠터는 데이터를 보여주는 역할. \ 
+> 모든 로직 처리 후 프리젠터는 데이터를 보여주는 역할. \  
 > 프리젠터 = 스타일, 컨테이너 = 데이터
 
 4개의 Router를 위해 컨테이너, 프리젠터들 생성
@@ -32,5 +32,20 @@ Home 폴더 - 컨테이너 생성 ) HomeContianer.js
 + 이때, error의 상태도 체크
 + 후에 render 하기
 
-+ Routes에 있는 Home.js는 삭제 ) Home 폴더에 있으니!!
++ Routes에 있는 Home.js는 삭제 ) Home 폴더에 있으니!! \
 계획 ) 컨테이너 먼저 만들고 api메소드 추가 후 데이터 보여주는 작업 할것임
+
+
+<p align="center">
+  <strong>5.1 Container Presenter Pattern part Two</strong><br>
+</p>
+
+Search폴더
++ 상호작용 필요
++ loading: false => 디폴트로 아무것도 로딩하지 않을 것임
++ searchTerm => 사용자가 단어글 가지고 검색하기를 기다림
+
+Detail폴더
++ ID를 가지고 얻게 되는 모든 것들은 (movie, tv) 모두 result를 가질 것
+
+
