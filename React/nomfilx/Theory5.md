@@ -64,3 +64,10 @@ componentDidMount(){} => 두 가지 옵션
 + async => wait를 원해요
 + await => 내가 작업을 끝낼 때 까지 다음것을 진행하지 마
 
+<p align="center">
+  <strong>5.3 TV Container </strong><br>
+</p>
+
++ const popular = await tvApi.popular();
++ 확인 후
++ const {data: {results: popular}} = await tvApi.popular() 
