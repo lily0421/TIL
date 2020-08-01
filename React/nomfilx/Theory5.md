@@ -48,4 +48,19 @@ Search폴더
 Detail폴더
 + ID를 가지고 얻게 되는 모든 것들은 (movie, tv) 모두 result를 가질 것
 
+<p align="center">
+  <strong>5.2 Home Container </strong><br>
+</p>
+
+컨포넌트가 마운트 되었을때, state의 요소를 찾고, 끝나면 state값을 설정 \
+에러 있으면 loading을 false로 변경
+
+componentDidMount(){} => 두 가지 옵션
++ 전체 API요청 
++ 각각의 요청을 분리된 함수로 만들어서 따로 요청 가능 ) 요소가 크지 않아 여기서 사용
+> getNowPlaying, getUpcoming(), getPopular()...
+
++ 메시지 작업 안하고 error상태값만 변경
++ async => wait를 원해요
++ await => 내가 작업을 끝낼 때 까지 다음것을 진행하지 마
 
