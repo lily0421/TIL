@@ -197,3 +197,34 @@ if(isNaN (parsedId) ){
 ```
 + 숫자가 아니면 /
 + 함수를 끝내고 싶어요 => return사용
+
+<p align="center">
+  <strong>5.6 Detail Container part Two</strong><br>
+</p>
+
++ url을 가지고 옴. console.log(this.props) => path를 알기 위함
++ location: {pathname} 추가
+콘솔창
+```javascript
+const path = "/movie/1121212"
+undefined
+
+path.includes("/movie/")
+true
+
+const something = "/show/121212";
+undefined
+
+something.includes("/movie/")
+false
+```
+
++ 생성자 사용
++ 클래스 생성 방식 알기
++ this.setState loading은 false이고 let result로 선언.
+> result가 뭐가 되었든(TV,movie)덮어쓰게 될 것임.
+
++ result=null인 것을 만들었고
++ try => movie인지 확인해서 t면 movie를 받고, 그 다음에 요청된 데이터를 가지고 result를 덮어씀
++ TVshow로부터 요청되어진 데이터를 가지고 result를 덮어씀
++ error발생시, catch에서 처리하고 finally에서의 loading false, resultr=null일 수 도 있고, movie 아니면 tvshow일 수 도 있음
