@@ -57,3 +57,48 @@ Loader.js
 
 기타
 + grid가 flexbox보다 나음
+
+<p align="center">
+  <strong>6.3 SearchPresenter Component  </strong><br>
+</p>
+
+SearchPresenter.js
++ container스타일 만들어줌
++ form도 만들어줌 ) submit이벤트를 차단함
++ value를 가져야 함 => input을 제어할 수 있음
++ search movies 혹은 TV shows는 value를 입력에 연결하려 함
++ => value를 추적해야 할 필요가 있음
++ 엔터의 기본 값 = submit
+
+updateTerm
+> searchPresenter.js
++ const SearchPresenter에 updateTerm추가
++ updateTerm: PropTypes.func.isRequired
++ Input에 onChange={updateTerm} 추가
+updateTerm 은 event로 가야함
+> searchContiner.js
++  updateTerm = (event) => {}
+
+updateTerm = (event) => {}
++ const {target} = event;
++ target은 value를 갖음
+
+```javascript
+updateTerm = (event) => {
+  const {
+    target: { value }
+    } = event;
+  this.setState({
+    searchTerm: value
+  });
+}
+```
++ search화면에서 입력 후 엔터 가능
+
+loading
+> searchPresenter.js
++ import Loader from "Components/Loader";
++ import Section from "Components/Section";
++ loader는 loading이 멈췄을때, movieResults로 가고
++ length의 길이가 0이면 sectinTitle로 감
+> 똑같이 showReseult와 TVResult에 적용
