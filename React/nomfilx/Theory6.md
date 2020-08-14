@@ -102,3 +102,45 @@ loading
 + loader는 loading이 멈췄을때, movieResults로 가고
 + length의 길이가 0이면 sectinTitle로 감
 > 똑같이 showReseult와 TVResult에 적용
+
+<p align="center">
+  <strong>6.4 Message Component  </strong><br>
+</p>
+
++ error text, not fonund text
+
+Components - Error.js
++ import
+```javascript
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+```
++ const
+```javascript
+const Container = styled.div``;
+const Text = styled.div``;
+const Error = () =>
+```
++ 마지막
+```javascript
+export default Error;
+```
++ 빼먹지 말기
+```javascript
+Error.PropTypes = {
+    text: PropTypes.string.isRequired
+}
+```
+
+HomeContainer.js
++ try 에 throw Error(); 해주고 주변에 어떻게 보여지는지 보기위해
++ HomePresenter.js로 가서 </Container> 윗줄에 추가
+```javascript
+{error && <Error text={errer} />}
+```
++ 이때 error는 null아니면 text를 줌
+
+SearchPresenter.js
++ tvResults가, movieResults의 길이가 0과 같으면message를 제공
+
