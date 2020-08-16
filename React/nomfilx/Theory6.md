@@ -144,3 +144,76 @@ HomeContainer.js
 SearchPresenter.js
 + tvResults가, movieResults의 길이가 0과 같으면message를 제공
 
+
+<p align="center">
+  <strong>6.5 Poster Component part One </strong><br>
+</p>
+
+poster => 복잡함
++ 우리의 user가 어디있든 보내야 함
+
+const Poster = () => ();
++ Poster은 일단 imageUrl, 이름, rating, year을 가지고 있음.
++ 여기에 star도 원하면 추가
++ ({id, imageUrl, title, rating, year })
++ (); 뒤에 콜론 반드시
+
+Poster.propTypes = {}
++ id 필요 ) user에게 ID propTypes 혹은 /를 보내야 하기 때문
++ propTypes => 대문자 없음에 주의
+
+const Container
++ poster를 위해 필요함
+
+const Image
++ 백그라운드에 올라갈 것임
+
+imageContainer를 만드는 이유?
++ 모든 poster는 image를 가지고 있고,
++ image container를 가짐
+=>  image container를 만들어줘야 함
+
++ </span>{" "} => rating 숫자가 들어감 ex. 6.5
++ <imageContainer></imageContainer> => title과 yaer이 필요
+
+우리가 필요한 것
++ movie 혹은 TVShow인데 => isMovie추가
++ isMovie의 default값은 false
+
++ import { Link } from "react-router-dom";하고
++ <Link to={isMovie ? `/movie/${id}` : `/show/${id}`}> </Link>안에 다 담기
+
+HomePresenter.js
++ import Poster from "../../Components/Poster";
++ <span key={movie.id}>{movie.title}</span>을 <Poster />로 바꿔주기
+
+<p align="center">
+  <strong>6.6 Rendering Poster Component </strong><br>
+</p>
+
+HomePresenter.js
+```javascript
+<Poster
+  key={movie.id}
+  id={movie.id}
+  imageUrl={movie.poster_path}
+  title={movie.original_title}
+  rating={movie.vote_average}
+  year={movie.release_date.substring(0, 4)}
+  isMovie={true}
+/>
+```
++ release_date => 2018-10-03형식인데 우리는 2018만 얻고 싶어요
++ substring(0,4)로 년도만 잘라요
+
+TV에도 필요한것 보기
++ Network에 가서 찾아보니 동일함 + 변동된것 존재하니 movie와 다르게 해줌
+
+SearchPresenter.js
++ import해주고
+> import Poster from "../../Components/Poster";
+
+
+
+
+
