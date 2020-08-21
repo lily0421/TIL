@@ -214,6 +214,38 @@ SearchPresenter.js
 > import Poster from "../../Components/Poster";
 
 
+<p align="center">
+  <strong>6.7 Poster Component part Two </strong><br>
+</p>
 
+Poster.js
++ image container => margin-bottom필요
++ margin-bottom이 text와 image를 구분해줌
++ const Image => 이미지 가져오기
+```javascript
+const Image = styled.div`
+  background-image: url(${props => props.bgUrl});
+  height: 180px;
+  background-size: cover;
+  border-radius: 4px;
+  background-position: center center;
+`;
+```
 
-
++ vote를 숨기기
++ 이미지가 hover되었을때, 불투명도를 올리고 싶어요
++ const ImageContainer =>
+```javascript
+const ImageContainer = styled.div`
+  margin-bottom: 5px;
+  &:hover {
+    ${Image} {
+      opacity: 0.3;
+    }
+    ${Rating} {
+      opacity: 1;
+    }
+  }
+`;
+```
++ ${Rating} => 누군가가 image container에 hover할때 rating을 봤으면 좋겠다.
