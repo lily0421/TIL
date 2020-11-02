@@ -8,3 +8,5 @@
 - pull
 - push
 - hihihi
+- second prac
+- 3
