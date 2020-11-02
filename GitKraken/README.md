@@ -8,3 +8,4 @@
 - pull
 - push
 - hihihi
+- firts prac
