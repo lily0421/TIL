@@ -7,5 +7,3 @@
 - push
 - pull
 - push
-- hihihi
-- firts prac
