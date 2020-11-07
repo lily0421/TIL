@@ -29,3 +29,24 @@ js엔진을 기반으로 웹 브라우저 뿐만 아니라 서버에서도 js사
 ```
 
 ⇒ .eslintrc.json 파일 생성됨
+
+
+### .prettierc파일 생성
+
+```javascript
+  {
+  "singleQuote": true,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "printWidth": 80
+  }
+```
+
+prettier적용
+
+```javascript
+yarn add eslint-config-prettier
+
+```
